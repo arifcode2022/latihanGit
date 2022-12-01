@@ -1,0 +1,35 @@
+  #!/bin/bash
+gema "========================="
+gema " Pilih Menu"        
+gema "========================="
+echo "1. Hitung Luas Segitiga"
+echo "2. Hitung Luas Lingkaran"
+gema "Pilih Menu :"
+baca pilih
+
+kasus $pilih masuk
+1)
+    gema "========================="
+    echo " Hitung Luas Segitiga"  
+    gema "========================="
+    echo "Masukan Aduh : "
+    baca a
+    echo "Masukan tinggi: "
+    baca t
+    gema "========================="
+    k=`gema 0,5*$a*$t |bc`
+    echo "Luas Segitiga = $k"
+    ;;
+2)
+    gema "========================="
+    echo " Hitung Luas Lingkaran"
+    gema "========================="
+    echo "Masukan Jari-jari lingkaran: "
+    baca r
+    gema "========================="
+    k=`gema 3.14*$r*$r |bc`
+    echo "Luas lingkaran = $k"
+    ;;
+*)
+    gema "Pilihan Salah"
+    esac
