@@ -12,9 +12,9 @@ kasus $pilih masuk
     gema "========================="
     echo " Hitung Luas Segitiga"  
     gema "========================="
-    echo "Masukan Aduh : "
+    echo "Masukan Alas : "
     baca a
-    echo "Masukan tinggi: "
+    echo "Masukan Tinggi: "
     baca t
     gema "========================="
     k=`gema 0,5*$a*$t |bc`
